@@ -1,0 +1,38 @@
+*{
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+}
+body{
+    background-color: white;
+}
+#container{
+    display:flex;
+    height: 920px;
+    border: 1px solid red;
+
+}
+div{
+    border: 1px solid red;
+}
+.div_h1{
+    display:flex;
+    justify-content: center;
+}
+.caixas_princ{
+    width:50%;
+    border: 1px solid blue;
+
+}
+.bar_nav{
+    display: flex;
+    justify-content: right;
+    border: 1px solid green;
+}
+
+.bar3{
+    width: 50%;
+    border: 1px solid green;
+}
