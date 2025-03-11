@@ -1,32 +1,84 @@
 @font-face{
     font-family: 'caviar';
     src:url('font/caviar/CaviarDreams.ttf')format('truetype');
+    font-weight: 100px;
+    font-style:normal;
+}
+@font-face{
+    font-family: 'caviar_bold';
+    src:url('font/caviar/CaviarDreams_Bold.ttf')format('truetype');
     font-weight: normal;
     font-style:normal;
 }
+#btn_menu{
+    margin-top: 5px;
+    margin-right: 15px;
+    width:70px;
+    height:32px;
+    border-radius: 10px;
+    background-color:rgb(46, 46, 46);
+}
+.cont_linha{
+    width: 27px;
+    margin: auto;
+}
+.mer{
+    margin-bottom: 5px;
+}
+.linha{
+    width: 25px;
+    height: 2px;
+    background-color:white;
+}
+#btn_menu:hover .t_1{
+    top: 2px;
+    position:relative;
+    margin:0px;
+    transform: rotate(-135deg);
+    transition-duration:0.2s;
+}
+#btn_menu:hover .t_2{
+    transition-duration:0.2s;
+    margin:0px;
+    position:relative;
+    transform: rotate(135deg);
+}
 
 .nav_bar{
-    transition-duration: 1s;
+    transition: 1s;
     background-color: rgba(255, 255, 255, 0.116);
     position: fixed;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align:center;
+    justify-content: right;
+    align-items: center; 
     width: 100%;
     height:100px;
     right: 0px;
     padding-top: 0px;
-    font-family: 'caviar';
-    font-size:1.7cap;
+    backdrop-filter: blur(4px);
 }
 .nav_bar:hover{
     transition-duration: 1s;
-    background-color: rgba(202, 202, 202, 0.616);
+    background-color: rgba(255, 255, 255, 0.616);
 }
 li{
+
+    color:rgb(0, 0, 0);
+    font-family:'caviar';
+    font-size:1.9cap;
+    text-align:center;
     display: inline;
-    margin: 30px 50px;
+    margin: 30px 30px;
     list-style-type: none;
+    cursor: pointer;
 }
+a{
+    color: inherit;
+    text-decoration: none;
+}
+a:hover{
+    color:rgb(168, 168, 168);
+    
+}
+
 

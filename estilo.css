@@ -3,7 +3,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'caviar';
     
 }
 @font-face{
@@ -21,7 +20,7 @@ body{
     display:flex;
     height: 920px;
     margin-top: 0px;
-    color: rgba(68, 68, 68, 0.658);
+    color: rgba(110, 110, 110, 0.658);
 }
 
 .div_cont{
@@ -51,7 +50,7 @@ body{
 }
 
 .caixas_princ{
-    margin-top: 57px;
+    
     width:50%;
     display:flex;
     justify-content: right;
