@@ -43,10 +43,26 @@
     position:relative;
     transform: rotate(135deg);
 }
+.div_bar{
+    display: flex;
+    justify-content: right;
+    align-items: center; 
+    width: 50%;
+    height: 100%;
+}
+.bar_logo{
+    justify-content: left !important;
+    font-family:'caviar';
+    font-size:3cap;
+}
+.bar_logo span{
+    margin-left: 10%;
+    color:rgb(0, 0, 0)
+}
 
 .nav_bar{
     transition: 1s;
-    background-color: rgba(255, 255, 255, 0.116);
+    background-color: rgba(255, 255, 255, 0);
     position: fixed;
     display: flex;
     justify-content: right;
@@ -65,7 +81,7 @@ li{
 
     color:rgb(0, 0, 0);
     font-family:'caviar';
-    font-size:1.9cap;
+    font-size:2cap;
     text-align:center;
     display: inline;
     margin: 30px 30px;

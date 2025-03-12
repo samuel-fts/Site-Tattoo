@@ -13,47 +13,57 @@
     
 }
 body{
-    background-color: rgb(255, 255, 255);
+    background-image:url('imgs/wall.jpg');
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 #container{
+    background-color:rgba(0, 0, 0, 0.308);
     display:flex;
     height: 920px;
     margin-top: 0px;
-    color: rgba(110, 110, 110, 0.658);
+    color: rgb(255, 255, 255);
 }
 
 .div_cont{
-    color:rgba(0, 0, 0, 0.075);
+    width:600px;
+    color:rgba(255, 255, 255, 0.76);
+    font-family:"caviar";
     font-weight: lighter;
-    font-size:130px;
+    font-size:90px;
     transform: rotate(270deg);
-    position:absolute;
+    position: absolute;
+    left:-200px
 }
-.img_1{
-    width: 100%;
-    height: 90%;
-    object-fit: cover;
-}
-.div-image_1{
-    width: 80%;
-    margin-left: 5%;
+.caixas_princ{ 
 
-}
-.div-image_2{
-    width: 20%;
-}
-.div-image_1, .div-image_2{ 
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.caixas_princ{
-    
     width:50%;
     display:flex;
     justify-content: right;
+    align-items: center;
+    
+}
+.caixas_princ_2{
+    display:flex;
+    width:50%;
+    justify-content: left;
+    
+    align-items: center;
+    color:rgb(255, 255, 255);
+    font-family:"caviar";
+
+}
+.caixas_princ_2 p{
+    margin-top: 20px;
+    font-size: 2cap;
+}
+
+.div_child_princ{
+    margin-left:50px;
+    text-align: center;
+    width: 400px;
 }
 
 
