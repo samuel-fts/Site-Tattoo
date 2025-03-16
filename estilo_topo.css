@@ -14,7 +14,7 @@
     width:70px;
     height:32px;
     border-radius: 10px;
-    background-color:rgb(255, 255, 255);
+    background-color:rgba(255, 240, 35, 0.89);
 }
 .cont_linha{
     width: 27px;
@@ -79,7 +79,7 @@
     transition-duration: 1s;
     background-color: rgba(255, 255, 255, 0.616);
 }
-li{
+.div_bar ul li{
 
     color:rgb(255, 255, 255);
     font-family:'caviar';
