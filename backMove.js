@@ -2,7 +2,7 @@
 
 class MoveEmbed{
     id="";
-    estilo=`top:0px;`;
+    estilo=0;
     div_scroll = null;
 
     constructor(config){
@@ -10,23 +10,33 @@ class MoveEmbed{
         this.controlsList=config.controlsList,
         this.loop=config.loop,
         this.id=`#${config.id}`,
-        this.estilo=config.estilo
+        this.estilo=config.estilo,
         this.div_scroll = document.querySelector(this.id);
+        
     }
     posDinamic(){
         
         const addClass = (posi)=>{
+            console.log(this.estilo)
             if(posi == 0 || posi == null){
-                this.div_scroll.setAttribute("style",this.estilo);
+                this.div_scroll.setAttribute("style",`top:${this.estilo}px;`);
+            }else if(this.estilo > 0 ){
+                let fixo = this.estilo;
+                fixo = fixo-(posi/3)
+                this.div_scroll.setAttribute("style",`top:${fixo}px;`);
+                console.log(fixo)
             }else{
-                this.estilo=`top:-${posi/8}px;`;
-                this.div_scroll.setAttribute("style",this.estilo);
+                let fixo = this.estilo;
+                fixo = fixo-(posi/3)
+                this.div_scroll.setAttribute("style",`top:${fixo}px;`);
+                console.log(fixo)
             }
             
         }
         document.addEventListener("scroll",(evt)=>{
             const posi = window.scrollY;
             addClass(posi);
+            
         })
 
 

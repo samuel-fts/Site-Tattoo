@@ -27,6 +27,13 @@
     overflow: hidden;  
     position:fixed;
 }
+.div_vd2{
+    height: 900px;
+    z-index: -1;
+    height: 100%;
+    overflow: hidden;  
+    position:fixed;
+}
 
 
 
