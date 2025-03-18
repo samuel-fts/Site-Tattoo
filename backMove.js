@@ -4,6 +4,7 @@ class MoveEmbed{
     id="";
     estilo=0;
     div_scroll = null;
+    vel=0;//quanto maior o valor, mais lento
 
     constructor(config){
         this.autoplay=config.autoplay,
@@ -11,23 +12,18 @@ class MoveEmbed{
         this.loop=config.loop,
         this.id=`#${config.id}`,
         this.estilo=config.estilo,
-        this.div_scroll = document.querySelector(this.id);
+        this.div_scroll = document.querySelector(this.id),
+        this.vel=config.vel
         
     }
     posDinamic(){
-        
         const addClass = (posi)=>{
             console.log(this.estilo)
             if(posi == 0 || posi == null){
                 this.div_scroll.setAttribute("style",`top:${this.estilo}px;`);
-            }else if(this.estilo > 0 ){
+            }else {
                 let fixo = this.estilo;
-                fixo = fixo-(posi/3)
-                this.div_scroll.setAttribute("style",`top:${fixo}px;`);
-                console.log(fixo)
-            }else{
-                let fixo = this.estilo;
-                fixo = fixo-(posi/3)
+                fixo = fixo-(posi/this.vel)
                 this.div_scroll.setAttribute("style",`top:${fixo}px;`);
                 console.log(fixo)
             }
