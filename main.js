@@ -21,7 +21,7 @@ const vid1 = new MoveEmbed(configs_primeiroVideo[0]);
 vid1.posDinamic();
 
 const vid1_int = new MoveEmbed(configs_primeiroVideo[1]);
-vid1_int.posDinamic();
+ vid1_int.posDinamic();
 
 const configs_segundoVideo = [
     {
